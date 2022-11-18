@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  --bg-color1: #e3008c;
+  --bg-color2: #00b7ef;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #0e1c36;
+}
+
+h1 {
+  font-size: 54px;
+  color: #00b7ef;
+  text-align: center;
+}
+
+/* cards */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 100vw;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.card {
+  height: 250px;
+  width: 300px;
+  min-width: 300px;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 10px 30px;
+  border: 1px solid var(#0e1c36);
+  transition: all 0.4s ease-in-out; /*----------La Magia-------*/
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  background-image: linear-gradient(
+    -135deg,
+    var(--bg-color1),
+    var(--bg-color2)
+  );
+}
+
+.card:hover {
+  height: 530px;
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card__encabezado img {
+  position: relative;
+  border-radius: 50%;
+  display: block;
+  height: 200px;
+  width: 200px;
+  border-top: 8px solid #fff;
+  border-bottom: 8px solid #fff;
+  object-fit: cover;
+  margin: 20px auto;
+  transition: all 0.3s ease;
+}
+
+.card__encabezado {
+  position: relative;
+}
+
+.card__encabezado::after,
+.card__encabezado::before {
+  position: absolute;
+  content: "";
+  opacity: 0.7;
+}
+
+.card__encabezado::after {
+  width: 50px;
+  height: 50px;
+  z-index: 20;
+  top: 0;
+  right: 25px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+.card__encabezado::before {
+  width: 70px;
+  height: 70px;
+  bottom: 0;
+  left: -10px;
+  border-radius: 20px;
+  background-color: #d31336;
+  transform: rotate(120deg);
+}
+
+.card__iconos {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.card__iconos li {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  line-height: 40px;
+  text-align: center;
+  transform: scale(0);
+  transition: all 0.5s ease;
+}
+
+.agrandar {
+  opacity: 0;
+  transition: all 0.5s ease;
+  transform: translateY(-45px);
+}
+.desplazar {
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.card:hover .agrandar {
+  opacity: 1;
+  transition: all 0.5s ease;
+  transform: translateY(0);
+}
+.card:hover .desplazar {
+  transform: scale(1);
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+
+.card__iconos li a {
+  color: var(--bg-color1);
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: #fff;
+  display: block;
+  line-height: 40px;
+  transition: all 0.3s;
+}
+
+.card__iconos li a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px var(--bg-color1);
+}
+
+.card__iconos .agrandar:nth-child(1) {
+  transition-delay: 0.2s;
+}
+.card__iconos .agrandar:nth-child(2) {
+  transition-delay: 0.3s;
+}
+.card__iconos .agrandar:nth-child(3) {
+  transition-delay: 0.4s;
+}
+
+.card__contenido {
+  margin-top: 10px;
+}
+
+.info-personal {
+  color: #fff;
+}
+
+.info-personal:nth-child(1) {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+  line-height: 25px;
+}
+.info-personal:nth-child(3) {
+  margin: 15px 0;
+}
+
+.card__acciones {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.botones {
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  padding: 8px 15px;
+  font-size: 16px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(90deg, #7579ff, #b224ef);
+}
+
+.botones:hover {
+  cursor: pointer;
+  width: 100%;
+}
+
+.botones > span {
+  font-size: 20px;
+}

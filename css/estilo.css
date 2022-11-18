@@ -31,6 +31,7 @@ html {
 
 #inicio .contenido header .contenido-header {
   max-width: 1100px;
+  height: 70px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -53,7 +54,8 @@ html {
   text-decoration: none;
   color: #fff;
   margin: 0 12px;
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 1.2em;
   transition: 0.5s;
 }
 
@@ -62,6 +64,7 @@ html {
 }
 
 #inicio .contenido header .contenido-header .redes a {
+  font-size: 1.3em;
   text-decoration: none;
   color: #fff;
   display: inline-block;
@@ -127,6 +130,7 @@ html {
   padding: 100px 15px;
   color: #111135;
   display: flex;
+  align-items: center;
 }
 
 #sobrenosotros .contenedor-foto {
