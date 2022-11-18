@@ -1,0 +1,59 @@
+.custombutton {
+  position: relative;
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  font-weight: bold;
+  border: 2px solid #ff5080;
+  background: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.custombutton__span {
+  background-color: #ff5080;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.35s;
+}
+
+.custombutton:hover .custombutton__span {
+  width: 100%;
+}
+
+.custombutton__a {
+  text-decoration: none;
+  background: none;
+  color: #ff5080;
+  z-index: 4;
+  font-size: 18px;
+  transition: 0.35s;
+}
+
+.custombutton:hover .custombutton__a {
+  color: #fff;
+}
+
+/* sobre nosotros */
+
+#sobrenosotros .custombutton {
+  width: 150px;
+  padding: 10px 0;
+  margin: 20px 0;
+}
+
+#sobrenosotros .custombutton__a {
+  color: #ff5080;
+  z-index: 4;
+  font-size: 16px;
+}
+
+#sobrenosotros .custombutton:hover .custombutton__a {
+  color: #fff;
+}

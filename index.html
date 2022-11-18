@@ -12,8 +12,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="estilo.css" />
-    <title>LP Desarrollador Web</title>
+    <!-- link de Css -->
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="/css/buttons.css" />
+    <title>Grupo de desarrollo Web</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,7 +31,7 @@
       <div class="contenido">
         <header>
           <div class="contenido-header">
-            <h1>/LP/</h1>
+            <h1>/Grupo5/</h1>
             <nav id="nav" class="">
               <ul id="links">
                 <li>
@@ -37,20 +39,24 @@
                     href="#inicio"
                     class="seleccionado"
                     onclick="seleccionar(this)"
-                    >INICIO</a
+                    >PRESENTACION</a
                   >
                 </li>
                 <li>
-                  <a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a>
+                  <a href="#sobrenosotros" onclick="seleccionar(this)"
+                    >FAMILIA</a
+                  >
                 </li>
                 <li>
-                  <a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a>
+                  <a href="#servicios" onclick="seleccionar(this)">AMIGOS</a>
                 </li>
                 <li>
-                  <a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a>
+                  <a href="#portfolio" onclick="seleccionar(this)">ESTUDIOS</a>
                 </li>
                 <li>
-                  <a href="#contacto" onclick="seleccionar(this)">CONTACTO</a>
+                  <a href="#contacto" onclick="seleccionar(this)"
+                    >FORMULARIO DE CONTACTOS</a
+                  >
                 </li>
               </ul>
             </nav>
@@ -73,20 +79,24 @@
           <p class="descripcion">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
           </p>
-          <a href="#portfolio">Ir a Portafolio</a>
+          <button class="custombutton">
+            <a class="custombutton__a" href="#portfolio"
+              ><span class="custombutton__span"></span> Ir a Portafolio</a
+            >
+          </button>
         </div>
       </div>
     </section>
 
     <!-- SECCION S O B R E M I -->
-    <section id="sobremi">
+    <section id="sobrenosotros">
       <div class="contenedor-foto">
         <img src="img/foto.jpg" alt="" />
       </div>
       <div class="sobremi">
-        <p class="titulo-seccion">Sobre Mi</p>
-        <h2>Hola, Soy <span>Lucas Perez</span></h2>
-        <h3>Desarrollador Web</h3>
+        <p class="titulo-seccion">Sobre Nosotros</p>
+        <h2>Hola, Somos el <span>Grupo5</span></h2>
+        <h3>Subtitulo</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
           reprehenderit voluptatibus blanditiis nulla adipisci iste fuga
@@ -97,7 +107,11 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nam a
           beatae natus.
         </p>
-        <a href="#">Descargar CV</a>
+        <button class="custombutton">
+          <a href="#" class="custombutton__a"
+            ><span class="custombutton__span"></span> Integrantes</a
+          >
+        </button>
       </div>
     </section>
 
@@ -370,6 +384,6 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
