@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="/css/buttons.css" />
+    <title>Grupo de desarrollo Web</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+      />
+</head>
+<body>
+    <body>
+        <section id="inicio">
+            <div class="contenido">
+              <header>
+                <div class="contenido-header">
+                  <h1>/Grupo5/</h1>
+                  <nav id="nav" class="">
+                    <ul id="links">
+                      <li>
+                        <a
+                          href="#inicio"
+                          class="seleccionado"
+                          onclick="seleccionar(this)"
+                          >PRESENTACION</a
+                        >
+                      </li>
+                      <li>
+                        <a href="familia.html" onclick="seleccionar(this)"
+                          >FAMILIA</a
+                        >
+                      </li>
+                      <li>
+                        <a href="amigos.html" onclick="seleccionar(this)">AMIGOS</a>
+                      </li>
+                      <li>
+                        <a href="estudios.html" onclick="seleccionar(this)">ESTUDIOS</a>
+                      </li>
+                      <li>
+                        <a href="contacto.html" onclick="seleccionar(this)"
+                          >FORMULARIO DE CONTACTOS</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <!-- SECCTION C O N T A C T O -->
+              <section id="contacto">
+                <h3 class="titulo-seccion">Contactanos ahora</h3>
+                <div class="contenedor-form">
+                  <form action="">
+                    <div class="fila mitad">
+                      <input
+                        type="text"
+                        placeholder="Nombre Completo *"
+                        class="input-mitad"
+                      />
+                      <input
+                        type="email"
+                        placeholder="Dirección de Email"
+                        class="input-mitad"
+                      />
+                    </div>
+                    <div class="fila">
+                      <input type="text" placeholder="Tema..." class="input-full" />
+                    </div>
+                    <div class="fila">
+                      <textarea
+                        name=""
+                        id=""
+                        cols="30"
+                        rows="10"
+                        placeholder="Tu Mensaje..."
+                        class="input-full"
+                      ></textarea>
+                    </div>
+
+                    <input type="submit" value="Enviar Mensaje" class="btn-enviar" />
+                  </form>
+                </div>
+              </section>
+ <!-- SECCION FOOTER -->
+ <footer>
+  <p>Todos los derechos reservados - 2022</p>
+  <div class="redes">
+    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+  </div>
+</footer>
+
+<script src="/js/script.js"></script>
+            </div>
+        </section>
+    
+   
+</body>
+</html>
