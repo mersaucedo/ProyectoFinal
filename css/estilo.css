@@ -14,8 +14,8 @@ html {
 /* *********************/
 
 #inicio {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("img/fondo-inicio.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/img/fondo-inicio.jpg");
   background-size: cover;
   background-position: center center;
   height: 100vh;
@@ -113,23 +113,6 @@ html {
   text-align: center;
 }
 
-#inicio .contenido .presentacion a {
-  text-decoration: none;
-  display: inline-block;
-  margin: 25px;
-  padding: 20px 25px;
-  border: 2px solid #fff;
-  border-radius: 50px;
-  color: #fff;
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: 0.5s;
-}
-
-#inicio .contenido .presentacion a:hover {
-  background-color: #ff5080;
-}
-
 #icono-nav {
   color: #fff;
   display: none;
@@ -138,7 +121,7 @@ html {
 /* seccion S O B R E  M I */
 /* *********************/
 
-#sobremi {
+#sobrenosotros {
   max-width: 1100px;
   margin: auto;
   padding: 100px 15px;
@@ -146,23 +129,23 @@ html {
   display: flex;
 }
 
-#sobremi .contenedor-foto {
+#sobrenosotros .contenedor-foto {
   max-width: 400px;
   margin-right: 80px;
 }
 
-#sobremi .contenedor-foto img {
+#sobrenosotros .contenedor-foto img {
   padding: 20px;
   width: 100%;
   border-radius: 20px;
   background-color: #f3f3f3;
 }
 
-#sobremi .sobremi {
+#sobrenosotros .sobremi {
   margin: 0 40px;
 }
 
-#sobremi .sobremi .titulo-seccion {
+#sobrenosotros .sobremi .titulo-seccion {
   font-size: 22px;
   text-transform: uppercase;
   color: #111135;
@@ -171,18 +154,18 @@ html {
   text-decoration-thickness: 5px;
 }
 
-#sobremi .sobremi h2 {
+#sobrenosotros .sobremi h2 {
   font-size: 34px;
   font-weight: bold;
   margin: 20px 0;
   letter-spacing: 2px;
 }
 
-#sobremi .sobremi h2 span {
+#sobrenosotros .sobremi h2 span {
   color: #ff5080;
 }
 
-#sobremi .sobremi h3 {
+#sobrenosotros .sobremi h3 {
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
@@ -190,28 +173,13 @@ html {
   letter-spacing: 1px;
 }
 
-#sobremi .sobremi p {
+#sobrenosotros .sobremi p {
   font-size: 14px;
   line-height: 25px;
   color: #565656;
   margin-bottom: 12px;
 }
 
-#sobremi .sobremi a {
-  display: inline-block;
-  text-decoration: none;
-  color: #000;
-  border-radius: 30px;
-  border: 1px solid #000;
-  padding: 10px 20px;
-  margin-top: 30px;
-  transition: 0.5s;
-}
-
-#sobremi .sobremi a:hover {
-  background-color: #ff5080;
-  color: #fff;
-}
 /* *********************/
 /* seccion S E R V I C I O S */
 /* *********************/
@@ -290,8 +258,8 @@ html {
 /* *********************/
 
 .contenedor-skills {
-  background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, 0.8)),
-    url("img/fondo-skills.jpg");
+  background-image: linear-gradient(#eb5a5acc, rgba(33, 16, 16, 0.8)),
+    url("/img/fondo-skills.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -568,21 +536,21 @@ footer a {
     font-size: 40px;
   }
   /* seccion SOBRE MI */
-  #sobremi {
+  #sobrenosotros {
     padding: 50px 0;
     display: block;
   }
-  #sobremi .contenedor-foto {
+  #sobrenosotros .contenedor-foto {
     max-width: 200px;
     margin: auto;
   }
-  #sobremi .contenedor-foto img {
+  #sobrenosotros .contenedor-foto img {
     padding: 8px;
   }
-  #sobremi .sobremi .titulo-seccion {
+  #sobrenosotros .sobremi .titulo-seccion {
     text-align: center;
   }
-  #sobremi .sobremi h2 {
+  #sobrenosotros .sobremi h2 {
     font-size: 25px;
     text-align: center;
   }
