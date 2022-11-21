@@ -233,7 +233,7 @@ body {
 
 .botones {
   width: 100%;
-  background-image: linear-gradient(90deg, #7579ff, #b224ef);
+  background-image: linear-gradient(90deg, #ff5080 30%, #ffd500 70%);
   font-size: 1.2em;
   margin: 0 auto;
   padding: 7px 12px;
