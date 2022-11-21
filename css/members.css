@@ -177,7 +177,7 @@ body {
 }
 
 .card__iconos li a {
-  color: #4558d0;
+  color: #b224ef;
   height: 100%;
   width: 100%;
   border-radius: 50%;
@@ -185,10 +185,11 @@ body {
   display: block;
   line-height: 40px;
   transition: all 0.3s;
+  font-size: 1.3em;
 }
 
 .card__iconos li a:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .card__iconos .agrandar:nth-child(1) {
