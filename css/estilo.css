@@ -204,6 +204,8 @@ html {
   text-decoration: underline;
   text-decoration-color: #d3d3d3;
   text-decoration-thickness: 5px;
+
+  
 }
 
 #servicios .fila {
@@ -439,7 +441,8 @@ body {
 }
 
 #contacto {
-	padding: 50px ;
+	padding: 100px 15px;
+  text-align: center;
 	background-color: #ffffff;
   }
   
@@ -462,14 +465,13 @@ body {
   
 
   #contacto .titulo-seccion {
-	max-width: 1100px;
-	text-align: center;
-	font-size: 22px;
-	text-transform: uppercase;
-	color: #111135;
-
-	text-decoration-color: #d3d3d3;
-	text-decoration-thickness: 5px;
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
   }
 
   
