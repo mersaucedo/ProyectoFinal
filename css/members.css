@@ -41,8 +41,7 @@ body {
 
 .main {
   display: flex;
-  width: 70%;
-  height: 100%;
+  padding: 100px 300px;
   background-color: white;
   display: flex;
   flex-direction: column;
