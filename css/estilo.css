@@ -14,7 +14,7 @@ html {
 /* *********************/
 
 #inicio {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(rgba(0, 0, 27, 0.5), rgba(0, 0, 27, 0.5)),
     url("/img/fondo-inicio.jpg");
   background-size: cover;
   background-position: center center;
@@ -22,7 +22,7 @@ html {
 }
 
 #inicio .contenido header {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 27, 0.8);
   position: fixed;
   width: 100%;
   z-index: 100;
