@@ -275,7 +275,12 @@ body {
   width: 30%;
   height: 100%;
   position: relative;
-  background-image: linear-gradient(150deg, #00ffff, #f37dff, #ffff00);
+  background-image: linear-gradient(
+    150deg,
+    #ffdc3e 5%,
+    #00ffff 50%,
+    #f37dff 85%
+  );
   overflow: hidden;
 }
 
