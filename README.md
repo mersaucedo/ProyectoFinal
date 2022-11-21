@@ -1,10 +1,33 @@
-Este Proyecto Final, ha sido creado utilizando las siguientes tecnologias: Html, Css y Js.
+Este Proyecto Final, ha sido creado utilizando las siguientes tecnologias: Html, Css y Js
 
-css paleta de colores(opcional):
-color: #0E1C36;
-color2: #E3008C;
-color2: #00B7EF;
+//members:
 
-otros:
-truquesa: #FF4E8F
-cdafo; #d31336
+-Fuente de letra:
+-Montserrat
+
+-Colores para los gradientes:
+-#00ffff
+-#b224ed
+-#c850c0
+-#7579ff
+-#ffdc3e
+-colores solidos:
+-#fff
+-#4558d0
+-#d31336
+-#0e1c36
+
+-Fuente de letra:
+-4.7em
+-2em
+-1.7em
+-1.3em
+-1em
+
+Formato de imagenes:
+-png
+-jpg
+
+Otros:
+-link de fontAwesome(para los icinos)
+-link de GoogleFonts(para la fuentes de letra)
