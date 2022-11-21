@@ -722,9 +722,10 @@ footer a {
   /* seccion PORTFOLIO */
   #portfolio {
     padding: 50px 0;
+    margin-top: 30px;
   }
   #portfolio .fila {
-    display: flex;
+    display: block;
   }
   #portfolio .fila .proyecto {
     margin: 10px auto;
