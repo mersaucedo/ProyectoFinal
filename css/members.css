@@ -278,8 +278,8 @@ body {
   background-image: linear-gradient(
     150deg,
     #ffdc3e 5%,
-    #00ffff 50%,
-    #f37dff 85%
+    #00ffff 45%,
+    #b224ed 100%
   );
   overflow: hidden;
 }
