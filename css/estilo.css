@@ -133,6 +133,7 @@ html {
   color: #111135;
   display: flex;
   align-items: center;
+  background-color: white;
 }
 
 #sobrenosotros .contenedor-foto {
@@ -578,17 +579,18 @@ body {
 }
 
 .formulario__btn {
-	align-items: center;
-	height: 45px;
-	line-height: 45px;
-	width: 30%;
-	background: #000;
-	color: #fff;
-	font-weight: bold;
-	border: none;
-	border-radius: 3px;
-	cursor: pointer;
-	transition: .1s ease all;
+  position: relative;
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  font-weight: bold;
+  border: 2px solid #ff5080;
+  background: transparent;
+  color: #ff5080;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 2;
 	
 }
 
