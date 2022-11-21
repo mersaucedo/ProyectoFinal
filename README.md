@@ -1,6 +1,11 @@
-Este Proyecto Final, ha sido creado utilizando las siguientes tecnologias: Html, Css y Js
+Este Proyecto responsive, ha sido creado utilizando las siguientes tecnologias: HTML5 CSS JS BALSAMIQ
 
-//members:
+-Integrantes:
+-Alfaro Nuñez, Edison Rafael
+-Araujo Guevara, Joseph Axel
+-Rodriguez Lucas, Antony Jeferson
+-Saucedo Santos, Mercedes Yanet
+
 
 -Fuente de letra:
 -Montserrat
