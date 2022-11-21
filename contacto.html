@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css" />
     <link rel="stylesheet" href="/css/buttons.css" />
+    <link rel="stylesheet" href="validacion.css">
     <title>Grupo de desarrollo Web</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,75 +18,162 @@
 </head>
 <body>
     <body>
-        <section id="inicio">
-            <div class="contenido">
-              <header>
-                <div class="contenido-header">
-                  <h1>/Grupo5/</h1>
-                  <nav id="nav" class="">
-                    <ul id="links">
-                      <li>
+      <section id="inicio">
+        <div class="contenido">
+        <header>
+            <div class="contenido-header">
+            <h1>/Grupo5/</h1>
+            <nav id="nav" class="">
+                <ul id="links">
+                    <li>
                         <a
-                          href="#inicio"
-                          class="seleccionado"
-                          onclick="seleccionar(this)"
-                          >PRESENTACION</a
+                        href="#inicio"
+                        class="seleccionado"
+                        onclick="seleccionar(this)"
+                        >PRESENTACION</a
                         >
-                      </li>
-                      <li>
+                    </li>
+                    <li>
                         <a href="familia.html" onclick="seleccionar(this)"
-                          >FAMILIA</a
+                        >FAMILIA</a
                         >
-                      </li>
-                      <li>
+                    </li>
+                    <li>
                         <a href="amigos.html" onclick="seleccionar(this)">AMIGOS</a>
-                      </li>
-                      <li>
+                    </li>
+                    <li>
                         <a href="estudios.html" onclick="seleccionar(this)">ESTUDIOS</a>
-                      </li>
-                      <li>
+                    </li>
+                    <li>
                         <a href="contacto.html" onclick="seleccionar(this)"
-                          >CONTACTO</a
+                        >CONTACTO</a
                         >
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-                <!-- SECCTION C O N T A C T O -->
-              <section id="contacto">
-                <h3 class="titulo-seccion">Contactanos ahora</h3>
-                <div class="contenedor-form">
-                  <form action="">
-                    <div class="fila mitad">
-                      <input
-                        type="text"
-                        placeholder="Nombre Completo *"
-                        class="input-mitad"
-                      />
-                      <input
-                        type="email"
-                        placeholder="Dirección de Email"
-                        class="input-mitad"
-                      />
-                    </div>
-                    <div class="fila">
-                      <input type="text" placeholder="Tema..." class="input-full" />
-                    </div>
-                    <div class="fila">
-                      <textarea
-                        name=""
-                        id=""
-                        cols="30"
-                        rows="10"
-                        placeholder="Tu Mensaje..."
-                        class="input-full"
-                      ></textarea>
-                    </div>
+                    </li>
+                </ul>
+            </nav>
 
-                    <input type="submit" value="Enviar Mensaje" class="btn-enviar" />
-                  </form>
+            <!-- Icono del menu responsive -->
+                <div id="icono-nav" onclick="responsiveMenu()">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
-              </section>
+
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                    </div>
+            </div>
+        </header>
+
+
+                <!-- SECCTION C O N T A C T O -->
+             
+
+                <section id="contacto">
+                  <h3 class="titulo-seccion">Contacto</h3>
+                  <div class="contenedor-form">
+                  
+            
+                <form action="" class="formulario" id="formulario">
+                  
+                  <!-- Grupo: Nombre -->
+                  <div class="formulario__grupo" id="grupo__nombre">
+                    <label for="nombre" class="formulario__label">Nombre</label>
+                    <div class="formulario__grupo-input">
+                      <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
+                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                  </div>
+            
+                  <!-- Grupo: Apellido -->
+                  <div class="formulario__grupo" id="grupo__apellido">
+                    <label for="apellido" class="formulario__label">Apellido</label>
+                    <div class="formulario__grupo-input">
+                      <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="john123">
+                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El apellido tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                  </div>
+            
+            
+            
+                  <!-- Grupo: Correo Electronico -->
+                  <div class="formulario__grupo" id="grupo__correo">
+                    <label for="correo" class="formulario__label">Correo Electrónico</label>
+                    <div class="formulario__grupo-input">
+                      <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                  </div>
+            
+                  <!-- Grupo: Teléfono -->
+                  <div class="formulario__grupo" id="grupo__telefono">
+                    <label for="telefono" class="formulario__label">Teléfono</label>
+                    <div class="formulario__grupo-input">
+                      <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 9 dígitos.</p>
+                  </div>
+            
+            
+                <div class="formulario__grupo" id="grupo__termino">
+                    <div class="fila">
+                    <textarea
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="10"
+                      placeholder="Tu Mensaje..."
+                      class="input-full"
+                    ></textarea>
+                    </div>
+            
+            
+            
+                  <!-- Grupo: Terminos y Condiciones -->
+                  <div class="formulario__grupo" id="grupo__terminos">
+                    <label class="formulario__label">
+                      <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                      Acepto los Terminos y Condiciones
+                    </label>
+                  </div>
+            
+                  <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                  </div>
+            
+                  <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="submit" class="formulario__btn">Enviar</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                  </div>
+                </form>
+                  </div>
+                          </section>
+              </main>
+            
+            
+            
+            
+              
+            
+              <script src="js/validacion.js"></script>
+              <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
  <!-- SECCION FOOTER -->
  <footer>
   <p>Todos los derechos reservados - 2022</p>

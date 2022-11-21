@@ -429,67 +429,232 @@ html {
 /* seccion C O N T A C T O */
 /* *********************/
 
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #E5E5E5;
+}
+
 #contacto {
-  padding: 100px 15px;
-  background-color: #f3f3f3;
-}
+	padding: 50px ;
+	background-color: #ffffff;
+  }
+  
+ 
+  
+  #contacto .formulario {
+	max-width: 1100px;
+	margin: auto;
+  }
+  
 
-#contacto .titulo-seccion {
-  margin-bottom: 20px;
-}
+  
+  #contacto .formulario input,
+  #contacto .formulario textarea {
+	padding: 20px;
+	border-radius: 20px;
+	border: none;
+	border: 1px solid #919191;
+  }
+  
 
-#contacto .contenedor-form {
-  max-width: 1100px;
-  margin: auto;
-}
+  #contacto .titulo-seccion {
+	max-width: 1100px;
+	text-align: center;
+	font-size: 22px;
+	text-transform: uppercase;
+	color: #111135;
 
-#contacto .contenedor-form .fila {
-  margin-bottom: 15px;
-}
+	text-decoration-color: #d3d3d3;
+	text-decoration-thickness: 5px;
+  }
 
-#contacto .contenedor-form .mitad {
-  display: flex;
-  justify-content: space-between;
+  
+  #contacto .formulario .input-full {
+	width: 100%;
+  }
+.formulario {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
 }
+#contacto .formulario .fila {
+	margin-bottom: 15px;
+	width: 100%;
+	height: max-content;
+  }
 
-#contacto .contenedor-form input,
-#contacto .contenedor-form textarea {
-  padding: 20px;
-  border-radius: 20px;
-  border: none;
-  border: 1px solid #919191;
+.formulario__label {
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
 }
-
-#contacto .contenedor-form .mitad input {
-  width: 48%;
-}
-
 #contacto .contenedor-form .input-full {
-  width: 100%;
+	width: 100%;
+  }
+
+.formulario__grupo-input {
+	position: relative;
 }
 
-#contacto .titulo-seccion {
-  text-align: center;
-  font-size: 22px;
-  text-transform: uppercase;
-  color: #111135;
-  text-decoration: underline;
-  text-decoration-color: #d3d3d3;
-  text-decoration-thickness: 5px;
+.formulario__input {
+	width: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
 }
 
-#contacto .btn-enviar {
-  display: block;
-  margin: auto;
-  cursor: pointer;
-  transition: 0.5s;
-  padding: 10px 15px !important;
+.formulario__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
 }
 
-#contacto .btn-enviar:hover {
-  background-color: #ff5080;
-  color: #fff;
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
 }
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__checkbox {
+	margin-right: 10px;
+}
+
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+	grid-column: span 2;
+}
+.formulario__grupo-termino{
+	grid-column: span 3;
+
+}
+
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario__btn {
+	align-items: center;
+	height: 45px;
+	line-height: 45px;
+	width: 30%;
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+	
+}
+
+.formulario__btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+	background-color: #ff5080;
+	color: #fff;
+}
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+
+/* ----- -----  Mediaqueries ----- ----- */
+@media screen and (max-width: 800px) {
+	.formulario {
+		grid-template-columns: 1fr;
+	}
+
+	.formulario__grupo-terminos, 
+	.formulario__mensaje,
+	.formulario__grupo-btn-enviar {
+		grid-column: 1;
+	}
+
+	.formulario__btn {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* *********************/
 /* seccion F O O T E R */
 /* *********************/
