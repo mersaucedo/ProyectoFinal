@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="css/estilo.css" />
     <link rel="stylesheet" href="/css/buttons.css" />
     <title>Grupo de desarrollo Web</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,32 +27,24 @@
         <div class="contenido">
           <header>
             <div class="contenido-header">
-              <h1>/JP/</h1>
+              <h1><a href="index.html" onclick="seleccionar(this)">/JP/</a></h1>
               <nav id="nav" class="">
                 <ul id="links">
                   <li>
-                    <a
-                      href="presentacion.html"
-                      class="seleccionado"
-                      onclick="seleccionar(this)"
-                      >PRESENTACION</a
+                    <a href="presentacion.html"class="seleccionado"onclick="seleccionar(this)">PRESENTACION</a>
+                  </li>
+                  <li>
+                    <a href="familia.html" onclick="seleccionar(this)">FAMILIA</a
                     >
                   </li>
                   <li>
-                    <a href="familia.html" onclick="seleccionar(this)"
-                      >FAMILIA</a
-                    >
-                  </li>
-                  <li>
-                    <a href="servicios.html" onclick="seleccionar(this)">AMIGOS</a>
+                    <a href="amigos.html" onclick="seleccionar(this)">AMIGOS</a>
                   </li>
                   <li>
                     <a href="estudios.html" onclick="seleccionar(this)">ESTUDIOS</a>
                   </li>
                   <li>
-                    <a href="#contacto" onclick="seleccionar(this)"
-                      >CONTACTO</a
-                    >
+                    <a href="contacto.html" onclick="seleccionar(this)">CONTACTO</a>
                   </li>
                 </ul>
               </nav>
@@ -66,24 +65,25 @@
  <!-- SECCION S O B R E M I -->
  <section id="sobrenosotros">
   <div class="contenedor-foto">
-    <img src="img/foto.jpg" alt="" />
+    <img src="img/JPacheco.png" alt="" />
   </div>
   <div class="sobremi">
     <p class="titulo-seccion">Sobre Nosotros</p>
-    <h2>Hola, Somos el <span>Grupo5</span></h2>
-    <h3>Subtitulo</h3>
+    <h2>Hola, <span>Javier Pacheco</span></h2>
+    <h3></h3>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
-      reprehenderit voluptatibus blanditiis nulla adipisci iste fuga
-      expedita, ea exercitationem dicta, similique rem, atque soluta
-      recusandae ipsam autem. Sapiente, quo ducimus?
+      Hello, there! I'm Javier Pacheco! Full Stack Developer 🚀 from Peru 💪💪💪 I'm a
+      Full Stack Developer at codeable icon @Codeable. I'm passionate about programming and 
+      optimizing processes through technology and self development. I'm a certified Life 
+      Coach and have more than 15 years of experience leading multidisciplinary teams in many 
+      industries.
+
     </p>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nam a
-      beatae natus.
+      I like eating good food and enjoy spending time with people!
     </p>
     <button class="custombutton">
-      <a href="#" class="custombutton__a"
+      <a href="amigos.html" class="custombutton__a"
         ><span class="custombutton__span"></span> Integrantes</a
       >
     </button>

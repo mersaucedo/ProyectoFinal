@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css" />
-    <link rel="stylesheet" href="/css/buttons.css" />
     <title>Grupo de desarrollo Web</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,27 +13,27 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap"
       rel="stylesheet"
       />
+      <link rel="stylesheet" href="css/members.css" />
+    <script
+    src="https://kit.fontawesome.com/9589b620b5.js"
+    crossorigin="anonymous"
+    ></script>
 </head>
 <body>
     <section id="inicio">
         <div class="contenido">
           <header>
             <div class="contenido-header">
-              <h1>/JP/</h1>
+              <h1><a href="index.html" onclick="seleccionar(this)">/JP/</a></h1>
               <nav id="nav" class="">
                 <ul id="links">
                   <li>
-                    <a
-                      href="presentacion.html"
-                    
-                      onclick="seleccionar(this)"
-                      >PRESENTACION</a
-                    >
+                    <a href="presentacion.html"onclick="seleccionar(this)"
+                      >PRESENTACION</a>
                   </li>
                   <li>
                     <a href="familia.html" onclick="seleccionar(this)"
-                      >FAMILIA</a
-                    >
+                      >FAMILIA</a>
                   </li>
                   <li>
                     <a href="amigos.html" onclick="seleccionar(this)">AMIGOS</a>
@@ -61,7 +60,130 @@
               </div>
             </div>
           </header>
-            </div>
+          <main id="main-container">
+            <section class="main">
+              <div class="wraper">
+                <div class="title-cont">
+                  <h1 class="title">Front-End Devs</h1>
+                  <h2 class="subtitle">El mejor <span>equipo</span></h2>
+                </div>
+              </div>
+              <div class="container">
+                <div class="card ">
+                  <div class="card__encabezado">
+                    <img src="img/img-cards/foto1.jpg" alt="gaaaaaa" />
+                  </div>
+                  <div class="card__iconos">
+                    <li class="agrandar">
+                      <a href="#"><span class="fa-brands fa-instagram"></span></span></a>
+                    </li>
+                    <li class="agrandar">
+                      <a href="https://github.com/mersaucedo"><span class="fa-brands fa-github"></span></a>
+                    </li>
+                    <li class="agrandar">
+                      <a href="#"><span class="fa-brands fa-twitter"></span></a>
+                    </li>
+                  </div>
+                  <div class="card__contenido">
+                    <div class="info-personal desplazar">Mercedes</div>
+                    <div class="info-personal desplazar">Huancayo</div>
+                    <div class="info-personal desplazar">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, vel.
+                    </div>
+                    <div class="card__acciones">
+                      <button class="botones agrandar">
+                          Enviar Mensaje
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__encabezado">
+                    <img src="Img/img-cards/foto2.jpg" alt="gaaaaaa" />
+                  </div>
+                  <div class="card__iconos">
+                    <li class="agrandar">
+                      <a href="#"><span class="fa-brands fa-instagram"></a>
+                    </li>
+                    <li class="agrandar">
+                      <a href="https://github.com/eddieAlfar"><span class="fa-brands fa-github"></span></a>
+                    </li>
+                    <li class="agrandar">
+                      <a href="#"><span class="fa-brands fa-twitter"></span></a>
+                    </li>
+                  </div>
+                  <div class="card__contenido">
+                    <div class="info-personal desplazar">Edison</div>
+                    <div class="info-personal desplazar">Lima</div>
+                    <div class="info-personal desplazar">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, beatae.
+                    </div>
+                    <div class="card__acciones">
+                      <button class="botones agrandar">
+                          Enviar Mensaje
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__encabezado">
+                    <img src="Img/img-cards/foto3.jpg" alt="gaaaaaa" />
+                  </div>
+                  <div class="card__iconos">
+                    <li class="agrandar">
+                      <a href="#"><span class="fa-brands fa-instagram"></a>
+                    </li>
+                    <li class="agrandar">
+                      <a href="https://github.com/Liebeslied001"><span class="fa-brands fa-github"></span></a>
+                    </li>
+                    <li class="agrandar">
+                      <a href="#"><span class="fa-brands fa-twitter"></span></a>
+                    </li>
+                  </div>
+                  <div class="card__contenido">
+                    <div class="info-personal desplazar">Joseph</div>
+                    <div class="info-personal desplazar">Lima</div>
+                    <div class="info-personal desplazar">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, inventore!
+                    </div>
+                    <div class="card__acciones">
+                      <button class="botones agrandar">
+                          Enviar Mensaje
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__encabezado">
+                    <img src="Img/img-cards/foto4.jpg" alt="gaaaaaa" />
+                  </div>
+                  <div class="card__iconos">
+                    <li class="agrandar">
+                      <a href="#"><span class="fa-brands fa-instagram"></a>
+                    </li>
+                    <li class="agrandar">
+                      <a href=""><span class="fa-brands fa-github"></span></a>
+                    </li>
+                    <li class="agrandar">
+                      <a href="#"><span class="fa-brands fa-twitter"></span></a>
+                    </li>
+                  </div>
+                  <div class="card__contenido">
+                    <div class="info-personal desplazar">Antony</div>
+                    <div class="info-personal desplazar">Lima</div>
+                    <div class="info-personal desplazar">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, saepe.
+                    </div>
+                    <div class="card__acciones">
+                      <button class="botones agrandar">
+                          Enviar Mensaje
+                      </button>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+            </section>
+      
         </div>
     </section>
      <!-- SECCION FOOTER -->
@@ -73,7 +195,8 @@
           <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
         </div>
       </footer>
+
+      <script src="js/script.js"></script>
   
-      <script src="/js/script.js"></script>
 </body>
 </html>

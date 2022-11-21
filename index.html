@@ -5,16 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    <script
+      src="https://kit.fontawesome.com/9589b620b5.js"
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    ></script>
     <!-- link de Css -->
     <link rel="stylesheet" href="css/estilo.css" />
-    <link rel="stylesheet" href="/css/buttons.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
     <title>Grupo de desarrollo Web</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,29 +28,27 @@
       <div class="contenido">
         <header>
           <div class="contenido-header">
-            <h1>/JP/</h1>
+            <h1><a href="index.html" onclick="seleccionar(this)">/JP/</a></h1>
             <nav id="nav" class="">
               <ul id="links">
                 <li>
-                  <a
-                    href="#sobrenosotros"onclick="seleccionar(this)"
-    
+                  <a href="presentacion.html" onclick="seleccionar(this)"
                     >PRESENTACION</a
                   >
                 </li>
                 <li>
-                  <a href="familia.html" onclick="seleccionar(this)"
-                    >FAMILIA</a
+                  <a href="familia.html" onclick="seleccionar(this)">FAMILIA</a>
+                </li>
+                <li>
+                  <a href="amigos.html" onclick="seleccionar(this)">AMIGOS</a>
+                </li>
+                <li>
+                  <a href="estudios.html" onclick="seleccionar(this)"
+                    >ESTUDIOS</a
                   >
                 </li>
                 <li>
-                  <a href="#servicios" onclick="seleccionar(this)">AMIGOS</a>
-                </li>
-                <li>
-                  <a href="#servicios" onclick="seleccionar(this)">ESTUDIOS</a>
-                </li>
-                <li>
-                  <a href="#contacto" onclick="seleccionar(this)"
+                  <a href="contacto.html" onclick="seleccionar(this)"
                     >CONTACTO</a
                   >
                 </li>
@@ -76,7 +71,8 @@
           <p class="bienvenida">Bienvenidos</p>
           <h2>Soy <span>Javier Pacheco</span>, Desarrollador Web</h2>
           <p class="descripcion">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+            Full Stack Developer, Life Coach and passionate for processes
+            optimization and programming!
           </p>
           <button class="custombutton">
             <a class="custombutton__a" href="#portfolio"
@@ -86,8 +82,8 @@
         </div>
       </div>
     </section>
-      
-            <!-- SECCION FOOTER -->
+
+    <!-- SECCION FOOTER -->
     <footer>
       <p>Todos los derechos reservados - 2022</p>
       <div class="redes">
